@@ -20,7 +20,7 @@ spec:
             - /bin/bash
             - -c
           args:
-            - exec vllm serve --port 8000
+            - exec vllm serve --port 8000 --shutdown-timeout 30
               # To enable tracing, add:
               # --otlp-traces-endpoint http://otel-collector:4317
               # --collect-detailed-traces all

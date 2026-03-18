@@ -98,6 +98,7 @@ spec:
                   --port 8200 \
                   --trust-remote-code \
                   --disable-uvicorn-access-log \
+                  --shutdown-timeout 30 \
                   --data-parallel-hybrid-lb \
                   --enable-expert-parallel \
                   --tensor-parallel-size $TP_SIZE \

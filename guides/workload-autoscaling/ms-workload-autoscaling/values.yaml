@@ -44,6 +44,7 @@ decode:
       modelCommand: vllmServe
       args:
         - "--disable-uvicorn-access-log"
+        - "--shutdown-timeout=30"
       ports:
         - containerPort: 8000
           name: vllm

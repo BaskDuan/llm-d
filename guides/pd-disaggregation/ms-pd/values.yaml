@@ -50,6 +50,7 @@ decode:
         - "--disable-uvicorn-access-log"
         - "--max-model-len"
         - "32000"
+        - "--shutdown-timeout=30"
       env:
         - name: VLLM_NIXL_SIDE_CHANNEL_HOST
           valueFrom:
@@ -136,6 +137,7 @@ prefill:
         - "--disable-uvicorn-access-log"
         - "--max-model-len"
         - "32000"
+        - "--shutdown-timeout=30"
       env:
         - name: VLLM_NIXL_SIDE_CHANNEL_HOST
           valueFrom:

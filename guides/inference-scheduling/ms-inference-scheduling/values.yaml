@@ -47,6 +47,7 @@ decode:
       args:
         - "--disable-uvicorn-access-log"
         - "--gpu-memory-utilization=0.95"
+        - "--shutdown-timeout=30"
         # - "--tensor-parallel-size=2" # added automatically from 'parallelism'
       ports:
         - containerPort: 8000

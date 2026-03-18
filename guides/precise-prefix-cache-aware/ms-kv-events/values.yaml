@@ -56,6 +56,7 @@ decode:
           }
         - "--disable-uvicorn-access-log"
         - "--gpu-memory-utilization=0.95"
+        - "--shutdown-timeout=30"
       env:
         - name: GAIE_RELEASE_NAME_POSTFIX  # index 0 matters because of set in helmfile
         - name: NAMESPACE

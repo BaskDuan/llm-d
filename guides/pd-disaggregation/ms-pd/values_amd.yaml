@@ -48,6 +48,7 @@ decode:
         - 'ROCM_ATTN' # only necessary when TP of prefill != decode; upcoming general fix.
         - "--max-model-len"
         - "32000"
+        - "--shutdown-timeout=30"
       env:
         - name: VLLM_NIXL_SIDE_CHANNEL_PORT
           value: "5600"
@@ -140,6 +141,7 @@ prefill:
         - 'ROCM_ATTN' # only necessary when TP of prefill != decode; upcoming general fix.
         - "--max-model-len"
         - "32000"
+        - "--shutdown-timeout=30"
       env:
         - name: VLLM_NIXL_SIDE_CHANNEL_PORT
           value: "5600"
